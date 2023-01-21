@@ -18,13 +18,13 @@ See [Comparing go-redis vs redigo](/guide/go-redis-vs-redigo.html).
 - [Redis Ring client](ring.html)
 - [Redis Univeral client](universal.html)
 
-This client also works with [kvrocks](https://github.com/KvrocksLabs/kvrocks), a distributed key
-value NoSQL database that uses RocksDB as storage engine and is compatible with Redis protocol.
+This client also works with [kvrocks](https://github.com/apache/incubator-kvrocks), a distributed
+key value NoSQL database that uses RocksDB as storage engine and is compatible with Redis protocol.
 
 ## Ecosystem
 
-- [Redis Mock](https://github.com/go-redis/redismock).
 - [Distributed Locks](https://github.com/bsm/redislock).
+- [Redis Mock](https://github.com/go-redis/redismock).
 - [Redis Cache](go-redis-cache.html).
 - [Redis Rate limiting](go-redis-rate-limiting.html).
 

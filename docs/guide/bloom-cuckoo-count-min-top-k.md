@@ -2,6 +2,8 @@
 title: 'Redis: Bloom, Cuckoo, Count-Min, Top-K'
 ---
 
+<UptraceCta />
+
 <CoverImage title="Redis: Bloom, Cuckoo, Count-Min, Top-K" />
 
 [[toc]]

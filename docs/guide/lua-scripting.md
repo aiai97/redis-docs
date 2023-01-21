@@ -2,6 +2,8 @@
 title: Go Redis Lua Scripting in 2022
 ---
 
+<UptraceCta />
+
 <CoverImage title="Go Redis Lua Scripting" />
 
 [[toc]]

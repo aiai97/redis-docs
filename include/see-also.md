@@ -1,3 +1,3 @@
-- [Monitoring Redis Performance and Errors](go-redis-monitoring.html)
+- [Monitoring Go Redis Performance and Errors](go-redis-monitoring.html)
 - [Go Redis Pipelines, WATCH and transactions](go-redis-pipelines.html)
 - [Go Redis PubSub](go-redis-pubsub.html)

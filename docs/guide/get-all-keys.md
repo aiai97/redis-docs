@@ -2,6 +2,8 @@
 title: 'Redis: Get All Keys [with examples]'
 ---
 
+<UptraceCta />
+
 <CoverImage title="Redis: get/scan/iterate all keys" />
 
 [[toc]]

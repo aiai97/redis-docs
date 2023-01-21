@@ -2,6 +2,8 @@
 title: go-redis vs redigo [pros and cons in 2022]
 ---
 
+<UptraceCta />
+
 <CoverImage title="Comparing go-redis vs redigo" />
 
 | Feature                                                            | [go-redis][1]      | [redigo][2]        |
