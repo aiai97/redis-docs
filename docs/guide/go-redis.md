@@ -1,5 +1,6 @@
 ---
 title: Go Redis [getting started guide]
+keywords: [go redis, golang redis, redis go, redis golang]
 ---
 
 <CoverImage title="Getting started with Golang Redis" />

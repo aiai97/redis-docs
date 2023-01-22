@@ -1,5 +1,6 @@
 ---
-title: 'Redis: Get All Keys [with examples]'
+title: 'Redis: Get all keys with prefix [with examples]'
+keywords: [redis get all keys with prefix]
 ---
 
 <UptraceCta />
