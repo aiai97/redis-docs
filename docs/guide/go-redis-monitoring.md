@@ -1,8 +1,12 @@
 ---
-title: Go Redis Monitoring Performance [OpenTelemetry 2022]
+title: Go Redis Monitoring Performance
 ---
 
 <CoverImage title="Monitoring Go Redis Performance and Errors" />
+
+This document explains how to monitor Go Redis client performace using OpenTelemetry. To monitor
+Redis server performance and metrics, see
+[OpenTelemetry Redis Monitoring](https://uptrace.dev/opentelemetry/redis-monitoring.html).
 
 [[toc]]
 
@@ -85,12 +89,6 @@ You can find a runnable example at
 
 You can also send OpenTelemetry metrics to Prometheus using
 [OpenTelemetry Prometheus exporter](https://uptrace.dev/opentelemetry/prometheus-metrics.html).
-
-## Monitoring Redis Server performance
-
-In addition to monitoring go-redis client, you can also Redis Server and Cluster performance using
-Opntelemetry Collector. See
-[OpenTelemetry Redis Monitoring](https://uptrace.dev/opentelemetry/redis-monitoring.html).
 
 ## What's next?
 
