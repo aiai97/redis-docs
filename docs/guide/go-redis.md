@@ -25,7 +25,7 @@ go get github.com/go-redis/redis/v8
 If you are using **Redis 7**, install go-redis/**v9** (currently in beta):
 
 ```shell
-go get github.com/go-redis/redis/v9
+go get github.com/redis/go-redis/v9
 ```
 
 ## Connecting to Redis Server
