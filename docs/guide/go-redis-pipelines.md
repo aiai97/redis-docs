@@ -109,7 +109,7 @@ if err != nil {
 ```
 
 Instead, you should transactional pipelines with
-[Watch](https://pkg.go.dev/github.com/go-redis/redis/v8#Client.Watch), for example, we can correctly
+[Watch](https://pkg.go.dev/github.com/redis/go-redis/v9#Client.Watch), for example, we can correctly
 implement [INCR](https://redis.io/commands/INCR) command using `GET`, `SET`, and `WATCH`. Note how
 we use `redis.TxFailedErr` to check if the transaction has failed or not.
 

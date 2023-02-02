@@ -23,7 +23,7 @@ features:
       We support pipelines, transactions, publish/subscribe, Lua scripts, mocks, distributed locks,
       and more.
 
-footer: Copyright © 2022 Go-Redis Authors
+footer: Copyright © 2023 Go-Redis Authors
 ---
 
 ```go
@@ -31,7 +31,7 @@ package main
 
 import (
 	"context"
-	"github.com/go-redis/redis/v8"
+	"github.com/redis/go-redis/v9"
 )
 
 func main() {

@@ -28,11 +28,11 @@ different languages and environments.
 ## OpenTelemetry instrumentation
 
 go-redis comes with an OpenTelemetry instrumentation called
-[redisotel](https://github.com/go-redis/redis/tree/master/extra/redisotel) that is distributed as a
+[redisotel](https://github.com/redis/go-redis/tree/master/extra/redisotel) that is distributed as a
 separate module:
 
 ```shell
-go get github.com/go-redis/redis/extra/redisotel/v8
+go get github.com/redis/go-redis/extra/redisotel/v9
 ```
 
 To instrument Redis client, you need to add the hook provided by redisotel. The same methods can be
@@ -40,8 +40,8 @@ used to instrument `redis.Client`, `redis.ClusterClient`, and `redis.Ring`.
 
 ```go
 import (
-    "github.com/go-redis/redis/v8"
-    "github.com/go-redis/redis/extra/redisotel/v8"
+    "github.com/redis/go-redis/v9"
+    "github.com/redis/go-redis/extra/redisotel/v9"
 )
 
 rdb := redis.NewClient(&redis.Options{...})
@@ -83,7 +83,7 @@ commands and records any errors as they occur. Here is how the collected informa
 ![Redis trace](/redis-monitoring/trace.png)
 
 You can find a runnable example at
-[GitHub](https://github.com/go-redis/redis/tree/master/example/otel).
+[GitHub](https://github.com/redis/go-redis/tree/master/example/otel).
 
 ## Prometheus
 

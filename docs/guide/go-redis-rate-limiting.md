@@ -8,7 +8,7 @@ title: 'Redis: Leaky-bucket rate-limiting [no dependencies]'
 scheduling algorithm (AKA generic cell rate algorithm). You can install it with:
 
 ```shell
-go get github.com/go-redis/redis_rate/v9
+go get github.com/redis/go-redis_rate/v9
 ```
 
 redis_rate accepts an interface to communicate with Redis and thus supports all flavors of go-redis

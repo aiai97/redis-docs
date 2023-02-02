@@ -16,7 +16,7 @@ Each `redis.Client` maintains a separate pool of connections.
 To connect to a Redis Cluster:
 
 ```go
-import "github.com/go-redis/redis/v8"
+import "github.com/redis/go-redis/v9"
 
 rdb := redis.NewClusterClient(&redis.ClusterOptions{
     Addrs: []string{":7000", ":7001", ":7002", ":7003", ":7004", ":7005"},

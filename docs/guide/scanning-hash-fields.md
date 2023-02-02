@@ -59,4 +59,4 @@ if err := rdb.HMGet(ctx, "key", "str1", "int").Scan(&model2); err != nil {
 ```
 
 You can also find the example above on
-[GitHub](https://github.com/go-redis/redis/tree/master/example/scan-struct).
+[GitHub](https://github.com/redis/go-redis/tree/master/example/scan-struct).

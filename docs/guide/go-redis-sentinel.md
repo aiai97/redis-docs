@@ -14,7 +14,7 @@ To get an idea how to use go-redis client, see [Getting started](go-redis.html) 
 To connect to a Redis Server managed by a [Redis Sentinel](https://redis.io/topics/sentinel):
 
 ```go
-import "github.com/go-redis/redis/v8"
+import "github.com/redis/go-redis/v9"
 
 rdb := redis.NewFailoverClient(&redis.FailoverOptions{
     MasterName:    "master-name",
@@ -26,7 +26,7 @@ Starting from v8 you can use experimental `NewFailoverClusterClient` to route re
 slave nodes:
 
 ```go
-import "github.com/go-redis/redis/v8"
+import "github.com/redis/go-redis/v9"
 
 rdb := redis.NewFailoverClusterClient(&redis.FailoverOptions{
     MasterName:    "master-name",
@@ -43,7 +43,7 @@ rdb := redis.NewFailoverClusterClient(&redis.FailoverOptions{
 To connect to a Redis Sentinel itself:
 
 ```go
-import "github.com/go-redis/redis/v8"
+import "github.com/redis/go-redis/v9"
 
 sentinel := redis.NewSentinelClient(&redis.Options{
     Addr: ":9126",

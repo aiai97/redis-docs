@@ -1,5 +1,5 @@
 ---
-title: Go Redis Lua Scripting in 2022
+title: Go Redis Lua Scripting
 ---
 
 <UptraceCta />
@@ -11,8 +11,8 @@ title: Go Redis Lua Scripting in 2022
 ## redis.Script
 
 go-redis supports Lua scripting with
-[redis.Script](https://pkg.go.dev/github.com/go-redis/redis/v8#Script), for
-[example](https://github.com/go-redis/redis/tree/master/example/lua-scripting), the following script
+[redis.Script](https://pkg.go.dev/github.com/redis/go-redis/v9#Script), for
+[example](https://github.com/redis/go-redis/tree/master/example/lua-scripting), the following script
 implements `INCRBY` command in Lua using `GET` and `SET` commands:
 
 ```go
@@ -44,7 +44,7 @@ Internally, go-redis uses [EVALSHA](https://redis.io/commands/evalsha) to execut
 fallbacks to [EVAL](https://redis.io/commands/eval) if the script does not exist.
 
 You can find the example above at
-[GitHub](https://github.com/go-redis/redis/tree/master/example/lua-scripting). For a more realistic
+[GitHub](https://github.com/redis/go-redis/tree/master/example/lua-scripting). For a more realistic
 example, check [redis_rate](https://github.com/go-redis/redis_rate/blob/v9/lua.go) which implements
 a leacky bucket [rate-limiter](rate-limiting.md).
 
@@ -54,7 +54,7 @@ Underneath, Lua's `number` type is a `float64` number that is used to store both
 Because Lua does not distinguish ints and floats, Redis always converts Lua numbers into ints
 discarding the decimal part, for example, `3.14` becomes `3`. If you want to return a float value,
 return it as a string and parse the string in Go using
-[Float64](https://pkg.go.dev/github.com/go-redis/redis/v8#Cmd.Float64) helper.
+[Float64](https://pkg.go.dev/github.com/redis/go-redis/v9#Cmd.Float64) helper.
 
 | Lua return                   | Go interface{}                      |
 | ---------------------------- | ----------------------------------- |

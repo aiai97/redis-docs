@@ -17,13 +17,7 @@ module:
 go mod init github.com/my/repo
 ```
 
-If you are using **Redis 6**, install go-redis/**v8**:
-
-```shell
-go get github.com/go-redis/redis/v8
-```
-
-If you are using **Redis 7**, install go-redis/**v9** (currently in beta):
+To install go-redis/**v9** (currently in beta):
 
 ```shell
 go get github.com/redis/go-redis/v9
@@ -34,7 +28,7 @@ go get github.com/redis/go-redis/v9
 To connect to a Redis Server:
 
 ```go
-import "github.com/go-redis/redis/v8"
+import "github.com/redis/go-redis/v9"
 
 rdb := redis.NewClient(&redis.Options{
 	Addr:	  "localhost:6379",
@@ -168,7 +162,7 @@ if err != nil {
 fmt.Println(val.(string))
 ```
 
-`Do` returns a [Cmd](https://pkg.go.dev/github.com/go-redis/redis/v8#Cmd) that has a bunch of
+`Do` returns a [Cmd](https://pkg.go.dev/github.com/redis/go-redis/v9#Cmd) that has a bunch of
 helpers to work with `interface{}` value:
 
 ```go

@@ -31,7 +31,7 @@ when one of the servers dies. Otherwise you should use [Redis Cluster](go-redis-
 To create a Ring cluster that consists of 3 shards:
 
 ```go
-import "github.com/go-redis/redis/v8"
+import "github.com/redis/go-redis/v9"
 
 rdb := redis.NewRing(&redis.RingOptions{
     Addrs: map[string]string{

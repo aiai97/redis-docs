@@ -1,5 +1,5 @@
 ---
-title: 'Redis: HyperLogLog [full guide 2022]'
+title: 'Redis: HyperLogLog [full guide 2023]'
 ---
 
 <CoverImage title="Using HyperLogLog with go-redis" />
@@ -11,7 +11,7 @@ a set. Redis supports HyperLogLog via 2 commands:
 - [PFCOUNT](https://redis.io/commands/pfcount) returns the approximate number of distinct elements
   or, in other words, the approximated set cardinality.
 
-For [example](https://github.com/go-redis/redis/tree/master/example/hll):
+For [example](https://github.com/redis/go-redis/tree/master/example/hll):
 
 ```go
 package main
@@ -20,7 +20,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/go-redis/redis/v8"
+	"github.com/redis/go-redis/v9"
 )
 
 func main() {

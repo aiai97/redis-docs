@@ -10,7 +10,7 @@ See [Comparing go-redis vs redigo](/guide/go-redis-vs-redigo.html).
 
 ## Clients
 
-[go-redis](https://github.com/go-redis/redis) provides Go clients for various flavors of Redis:
+[go-redis](https://github.com/redis/go-redis) provides Go clients for various flavors of Redis:
 
 - [Getting started with go-redis](go-redis.html)
 - [Redis Cluster client](go-redis-cluster.html)

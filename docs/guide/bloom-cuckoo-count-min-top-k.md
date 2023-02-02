@@ -27,7 +27,7 @@ And then load the module when you start a Redis instance:
 ```
 
 You can find the source code for the examples below at
-[GitHub](https://github.com/go-redis/redis/tree/master/example/redis-bloom).
+[GitHub](https://github.com/redis/go-redis/tree/master/example/redis-bloom).
 
 ## Bloom vs. Cuckoo
 
@@ -58,8 +58,8 @@ OK
 ## Bloom and Cuckoo
 
 You can execute Redis Bloom [commands](https://oss.redis.com/redisbloom/Bloom_Commands/) using
-general [Do](https://pkg.go.dev/github.com/go-redis/redis/v8#Client.Do) function and then retrieve
-the result with [Cmd](https://pkg.go.dev/github.com/go-redis/redis/v8#Cmd) helpers:
+general [Do](https://pkg.go.dev/github.com/redis/go-redis/v9#Client.Do) function and then retrieve
+the result with [Cmd](https://pkg.go.dev/github.com/redis/go-redis/v9#Cmd) helpers:
 
 ```go
 func bloomFilter(ctx context.Context, rdb *redis.Client) {

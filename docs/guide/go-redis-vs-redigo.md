@@ -1,5 +1,5 @@
 ---
-title: go-redis vs redigo [pros and cons in 2022]
+title: go-redis vs redigo [pros and cons in 2023]
 ---
 
 <UptraceCta />
@@ -60,5 +60,5 @@ _, err := conn.Set(...).Result()
 conn.Close()
 ```
 
-[1]: https://github.com/go-redis/redis
+[1]: https://github.com/redis/go-redis
 [2]: https://github.com/gomodule/redigo
