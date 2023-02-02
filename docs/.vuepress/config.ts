@@ -1,15 +1,21 @@
 import { defineUserConfig } from 'vuepress'
 import type { DefaultThemeOptions } from 'vuepress'
+import { defaultTheme } from '@vuepress/theme-default'
 import { path } from '@vuepress/utils'
-const { webpackBundler } = require('@vuepress/bundler-webpack')
-const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics')
-const { registerComponentsPlugin } = require('@vuepress/plugin-register-components')
-const { searchPlugin } = require('@vuepress/plugin-search')
-const { sitemapPlugin } = require('vuepress-plugin-sitemap2')
-const { seoPlugin } = require('vuepress-plugin-seo2')
-const { redirectPlugin } = require('vuepress-plugin-redirect')
+import { viteBundler } from '@vuepress/bundler-vite'
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+import { searchPlugin } from '@vuepress/plugin-search'
+import { sitemapPlugin } from 'vuepress-plugin-sitemap2'
+import { seoPlugin } from 'vuepress-plugin-seo2'
+import { redirectPlugin } from 'vuepress-plugin-redirect'
 
-import { localTheme } from './theme'
+import Icons from 'unplugin-icons/vite'
+import IconsResolver from 'unplugin-icons/resolver'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+
 import { navbar, sidebar } from './configs'
 
 const isProd = process.env.NODE_ENV === 'production'
@@ -19,9 +25,10 @@ export default defineUserConfig<DefaultThemeOptions>({
   title: 'Go Redis',
   description: 'Golang Redis client for Redis Server and Redis Cluster',
 
-  theme: localTheme({
+  theme: defaultTheme({
     logo: '/favicon-32x32.png',
-    darkMode: false,
+    colorMode: 'light',
+    colorModeSwitch: false,
     contributors: false,
 
     navbar: navbar.en,
@@ -32,20 +39,36 @@ export default defineUserConfig<DefaultThemeOptions>({
     docsDir: 'docs',
   }),
   alias: {
-    '@public': path.resolve(__dirname, './public'),
+    '@': path.resolve(__dirname),
+    '@public': path.resolve(__dirname, 'public'),
   },
 
   evergreen: !isProd,
   shouldPreload: false,
   shouldPrefetch: false,
 
-  bundler: webpackBundler({
-    configureWebpack: (config) => {
-      config.module.rules.push({
-        test: /\.mjs$/i,
-        resolve: { byDependency: { esm: { fullySpecified: false } } },
-      })
-      return {}
+  bundler: viteBundler({
+    viteOptions: {
+      plugins: [
+        AutoImport({
+          resolvers: [ElementPlusResolver(), IconsResolver()],
+          vueTemplate: true,
+        }),
+
+        Components({
+          resolvers: [
+            IconsResolver({
+              enabledCollections: ['ep'],
+            }),
+            ElementPlusResolver(),
+          ],
+        }),
+
+        Icons(),
+      ],
+      ssr: {
+        noExternal: ['element-plus'],
+      },
     },
   }),
 
