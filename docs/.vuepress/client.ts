@@ -1,6 +1,6 @@
 import { defineClientConfig, resolvers } from '@vuepress/client'
 
-import Layout from './layouts/Layout.vue'
+import Layout from '@/layouts/Layout.vue'
 
 export default defineClientConfig({
   layouts: {
