@@ -1,6 +1,6 @@
 ---
 home: true
-title: Golang Redis client
+title: Golang Redis客户端
 
 actions:
   - text: 介绍
@@ -11,17 +11,15 @@ actions:
     type: secondary
 
 features:
-  - title: All flavors
+  - title: 多种客户端
     details:
-      Out-of-the-box works with Redis Server, Redis Cluster, Redis Sentinel, and even Ring of Redis
-      Servers.
-  - title: Type-safe
+      支持单机Redis Server、Redis Cluster、Redis Sentinel、Redis分片服务器
+  - title: 数据类型
     details:
-      go-redis provides types for most Redis commands so you can work with well-structured replies.
-  - title: Feature-rich
+      go-redis会根据不同的redis命令处理成指定的数据类型，不必进行繁琐的数据类型转换
+  - title: 功能完善
     details:
-      We support pipelines, transactions, publish/subscribe, Lua scripts, mocks, distributed locks,
-      and more.
+      go-redis支持管道(pipeline)、事务、pub/sub、Lua脚本、mock、分布式锁等功能
 
 footer: Copyright © 2023 Go-Redis Authors
 ---

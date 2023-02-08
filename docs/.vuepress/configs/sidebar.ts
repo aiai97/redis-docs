@@ -42,16 +42,16 @@ export const zh: SidebarConfig = {
   '/': [
     {
       isGroup: true,
-      text: 'Guide',
+      text: '使用文档',
       children: [
-        { text: '介绍', link: '/guide/' },
-        { text: 'Getting started', link: '/guide/go-redis.html' },
-        { text: 'Redis Cluster', link: '/guide/go-redis-cluster.html' },
-        { text: 'Redis Sentinel', link: '/guide/go-redis-sentinel.html' },
-        { text: 'Redis Ring', link: '/guide/ring.html' },
-        { text: 'Universal client', link: '/guide/universal.html' },
-        { text: 'Pipelines and transactions', link: '/guide/go-redis-pipelines.html' },
-        { text: 'PubSub', link: '/guide/go-redis-pubsub.html' },
+        { text: '介绍', link: '/zh/guide/' },
+        { text: '入门', link: '/zh/guide/go-redis.html' },
+        { text: 'Redis集群', link: '/zh/guide/go-redis-cluster.html' },
+        { text: 'Redis哨兵', link: '/zh/guide/go-redis-sentinel.html' },
+        { text: 'Redis分片', link: '/zh/guide/ring.html' },
+        { text: '通用客户端', link: '/zh/guide/universal.html' },
+        { text: '管道和事务', link: '/zh/guide/go-redis-pipelines.html' },
+        { text: '发布订阅', link: '/zh/guide/go-redis-pubsub.html' },
       ],
     },
     {

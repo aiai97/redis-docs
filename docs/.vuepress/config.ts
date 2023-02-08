@@ -30,7 +30,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     '/zh/': {
       lang: 'zh-CN',
       title: 'Go Redis',
-      description: 'Golang Redis client for Redis Server and Redis Cluster',
+      description: '支持Redis Server和Redis Cluster的Golang客户端',
     },
   },
 
