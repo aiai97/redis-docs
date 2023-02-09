@@ -52,6 +52,7 @@ export const zh: SidebarConfig = {
         { text: '通用客户端', link: '/zh/guide/universal.html' },
         { text: '管道和事务', link: '/zh/guide/go-redis-pipelines.html' },
         { text: '发布订阅', link: '/zh/guide/go-redis-pubsub.html' },
+        { text: '配置项', link: '/zh/guide/go-redis-option.html' },
       ],
     },
     {

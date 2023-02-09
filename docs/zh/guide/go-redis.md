@@ -24,7 +24,7 @@ go get github.com/redis/go-redis/v9
 
 ## 连接到Redis服务器
 
-连接到Redis服务器:
+连接到Redis服务器示例，更多配置参数，请参照 [redis.Options](go-redis-option.html#redis-client):
 
 ```go
 import "github.com/redis/go-redis/v9"
@@ -115,7 +115,7 @@ telnet: Unable to connect to remote host: Connection refused
 如果你使用Docker、Kubernetes、Istio、Service Mesh、Sidecar方式运行，应该确保服务在容器完全可用后启动，
 你可以通过[健康检查](https://docs.docker.com/engine/reference/run/#healthcheck)、Readiness Gate、Istio `holdApplicationUntilProxyStarts`等。
 
-## Context
+## Context 上下文
 
 go-redis支持Context，你可以使用它控制 [超时](go-redis-debugging.html#timeouts) 或者传递一些数据, 也可以 [监控](redis-performance-monitoring.html) go-redis性能。
 
@@ -218,7 +218,3 @@ if err != nil {
 }
 fmt.Println("client name", name)
 ```
-
-## See also
-
-!!!include(see-also.md)!!!
