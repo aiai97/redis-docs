@@ -37,3 +37,37 @@ export const en: SidebarConfig = {
     },
   ],
 }
+
+export const zh: SidebarConfig = {
+  '/': [
+    {
+      isGroup: true,
+      text: '使用文档',
+      children: [
+        { text: '介绍', link: '/zh/guide/' },
+        { text: '入门', link: '/zh/guide/go-redis.html' },
+        { text: 'Redis集群', link: '/zh/guide/go-redis-cluster.html' },
+        { text: 'Redis哨兵', link: '/zh/guide/go-redis-sentinel.html' },
+        { text: 'Redis分片', link: '/zh/guide/ring.html' },
+        { text: '通用客户端', link: '/zh/guide/universal.html' },
+        { text: '管道和事务', link: '/zh/guide/go-redis-pipelines.html' },
+        { text: '发布订阅', link: '/zh/guide/go-redis-pubsub.html' },
+        { text: '配置项', link: '/zh/guide/go-redis-option.html' },
+      ],
+    },
+    {
+      isGroup: true,
+      text: '资料说明',
+      children: [
+        { text: '连接池', link: '/zh/guide/go-redis-pool.html' },
+        { text: 'Hook钩子', link: '/zh/guide/go-redis-hook.html' },
+        { text: '追踪监控', link: '/zh/guide/go-redis-monitoring.html' },
+        { text: 'Lua 脚本', link: '/zh/guide/lua-scripting.html' },
+        { text: '限速器', link: '/zh/guide/go-redis-rate-limiting.html' },
+        { text: '迭代Key', link: '/zh/guide/get-all-keys.html' },
+        { text: '结果集映射', link: '/zh/guide/scanning-hash-fields.html' },
+        { text: 'HyperLogLog', link: '/zh/guide/go-redis-hll.html' },
+      ],
+    },
+  ],
+}
