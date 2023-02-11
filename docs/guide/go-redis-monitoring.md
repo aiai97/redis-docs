@@ -19,8 +19,7 @@ and errors) and [OpenTelemetry metrics](https://uptrace.dev/opentelemetry/metric
 Otel allows developers to collect and export telemetry data in a vendor agnostic way. With
 OpenTelemetry, you can instrument your application once and then add or change vendors without
 changing the instrumentation, for example, here is a list popular
-[DataDog competitors](https://uptrace.dev/get/compare/datadog-competitors.html) that support
-OpenTelemetry.
+[DataDog competitors](https://uptrace.dev/blog/datadog-competitors.html) that support OpenTelemetry.
 
 OpenTelemetry is available for most programming languages and provides interoperability across
 different languages and environments.
@@ -97,7 +96,7 @@ Next, start using Uptrace by following the
 
 Popular instrumentations:
 
-- [Open Source tracing tools](https://uptrace.dev/get/compare/distributed-tracing-tools.html)
+- [Open Source tracing tools](https://uptrace.dev/blog/distributed-tracing-tools.html)
 - [OpenTelemetry net/http](https://uptrace.dev/opentelemetry/instrumentations/go-net-http.html)
 - [OpenTelemetry gRPC](https://uptrace.dev/opentelemetry/instrumentations/go-grpc.html)
 - [OpenTelemetry Gin](https://uptrace.dev/opentelemetry/instrumentations/go-gin.html)

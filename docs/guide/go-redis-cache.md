@@ -86,7 +86,7 @@ mycache := cache.New(&cache.Options{
 ## Cache monitoring
 
 If you are interested in monitoring cache hit rate, see the guide for
-[Monitoring using OpenTelemetry Metrics](https://blog.uptrace.dev/posts/opentelemetry-metrics-cache-stats/).
+[Monitoring using OpenTelemetry Metrics](https://uptrace.dev/get/opentelemetry-metrics-cache-stats.html).
 
 ## Monitoring Performance
 

@@ -36,7 +36,7 @@ relies on connection timeouts.
 If you are using cloud providers like AWS or Google Cloud, don't use timeouts smaller than 1 second.
 Such small timeouts work well most of the time, but fail miserably when cloud is slower than
 usually. See
-[Go Context timeouts can be harmful](https://blog.uptrace.dev/posts/go-context-timeout.html) for
+[Go Context timeouts can be harmful](https://uptrace.dev/blog/golang-context-timeout.html) for
 details.
 
 ## Large number of open connections
