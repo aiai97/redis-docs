@@ -6,17 +6,17 @@ title: go-redis vs redigo [pros and cons in 2023]
 
 <CoverImage title="Comparing go-redis vs redigo" />
 
-| Feature                                                            | [go-redis][1]      | [redigo][2]        |
-| ------------------------------------------------------------------ | ------------------ | ------------------ |
-| GitHub stars                                                       | 15k+               | 9k+                |
-| Type-safe                                                          | :heavy_check_mark: | :x:                |
-| Connection pooling                                                 | Automatic          | Manual             |
-| Custom commands                                                    | :heavy_check_mark: | :heavy_check_mark: |
-| [High-level PubSub API](go-redis-pubsub.html)                      | :heavy_check_mark: | :x:                |
-| [Redis Sentinel client](go-redis-sentinel.html)                    | :heavy_check_mark: | Using a plugin     |
-| [Redis Cluster client](go-redis-cluster.html)                      | :heavy_check_mark: | Using a plugin     |
-| [Redis Ring](ring.html)                                            | :heavy_check_mark: | :x:                |
-| [OpenTelemetry instrumentation](redis-performance-monitoring.html) | :heavy_check_mark: | :x:                |
+| Feature                                                   | [go-redis][1]      | [redigo][2]        |
+| --------------------------------------------------------- | ------------------ | ------------------ |
+| GitHub stars                                              | 15k+               | 9k+                |
+| Type-safe                                                 | :heavy_check_mark: | :x:                |
+| Connection pooling                                        | Automatic          | Manual             |
+| Custom commands                                           | :heavy_check_mark: | :heavy_check_mark: |
+| [High-level PubSub API](go-redis-pubsub.html)             | :heavy_check_mark: | :x:                |
+| [Redis Sentinel client](go-redis-sentinel.html)           | :heavy_check_mark: | Using a plugin     |
+| [Redis Cluster client](go-redis-cluster.html)             | :heavy_check_mark: | Using a plugin     |
+| [Redis Ring](ring.html)                                   | :heavy_check_mark: | :x:                |
+| [OpenTelemetry instrumentation](go-redis-monitoring.html) | :heavy_check_mark: | :x:                |
 
 The main difference between 2 projects is that go-redis provides type-safe API for each Redis
 command but redigo uses print-like API:

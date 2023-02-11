@@ -124,7 +124,7 @@ container is fully available, for example, by configuring
 
 Every Redis command accepts a context that you can use to set
 [timeouts](go-redis-debugging.html#timeouts) or propagate some information, for example,
-[tracing context](redis-performance-monitoring.html).
+[tracing context](go-redis-monitoring.html).
 
 ```go
 ctx := context.Background()
