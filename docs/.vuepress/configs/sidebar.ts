@@ -59,7 +59,7 @@ export const zh: SidebarConfig = {
       isGroup: true,
       text: '资料说明',
       children: [
-        { text: '连接池', link: '/zh/guide/go-redis-pool.html' },
+        { text: '调试：连接池、超时', link: '/zh/guide/go-redis-debug.html' },
         { text: 'Hook钩子', link: '/zh/guide/go-redis-hook.html' },
         { text: '追踪监控', link: '/zh/guide/go-redis-monitoring.html' },
         { text: 'Lua 脚本', link: '/zh/guide/lua-scripting.html' },
