@@ -28,18 +28,18 @@ type Limiter interface {
 ```go
 type Options struct {
     // 连接网络类型，如: tcp、udp、unix等方式
-	// 如果为空默认tcp
+    // 如果为空默认tcp
     Network string
 	
     // redis服务器地址，ip:port格式，比如：192.168.1.100:6379
-	// 默认为 :6379
+    // 默认为 :6379
     Addr string
     
-	// ClientName 是对网络连接设置一个名字，使用 "CLIENT LIST" 命令
-	// 可以查看redis服务器当前的网络连接列表
-	// 如果设置了ClientName，go-redis对每个连接调用 `CLIENT SETNAME ClientName` 命令
-	// 查看: https://redis.io/commands/client-setname/
-	// 默认为空，不设置客户端名称
+    // ClientName 是对网络连接设置一个名字，使用 "CLIENT LIST" 命令
+    // 可以查看redis服务器当前的网络连接列表
+    // 如果设置了ClientName，go-redis对每个连接调用 `CLIENT SETNAME ClientName` 命令
+    // 查看: https://redis.io/commands/client-setname/
+    // 默认为空，不设置客户端名称
     ClientName string
 	
 	// 如果你想自定义连接网络的方式，可以自定义 `Dialer` 方法，
@@ -76,7 +76,7 @@ type Options struct {
 	// 默认 8 * time.Millisecond (8毫秒) ，设置-1为禁用
     MinRetryBackoff time.Duration
 
-    // 每次重试最小间隔时间
+    // 每次重试最大间隔时间
     // 默认 512 * time.Millisecond (512毫秒) ，设置-1为禁用
     MaxRetryBackoff time.Duration
     
