@@ -60,3 +60,11 @@ if err := rdb.HMGet(ctx, "key", "str1", "int").Scan(&model2); err != nil {
 
 You can also find the example above on
 [GitHub](https://github.com/redis/go-redis/tree/master/example/scan-struct).
+
+You can also write the value of the struct field into redis, such as the `MSet` and `HSet` commands:
+
+```go
+if err := rdb.HSet(ctx, "key", model1).Err(); err != nil {
+	panic(err)
+}
+```
