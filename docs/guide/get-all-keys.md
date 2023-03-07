@@ -1,6 +1,10 @@
 ---
 title: 'Redis: Get all keys with prefix [with examples]'
-keywords: [redis get all keys with prefix]
+description:
+keywords:
+  - redis get all keys
+  - redis get all keys and values
+  - redis get all keys with prefix
 ---
 
 <UptraceCta />
@@ -11,8 +15,9 @@ keywords: [redis get all keys with prefix]
 
 ## Iterating over keys
 
-You could use `KEYS prefix:*` command to get all keys by prefix, but it is rather slow if you need
-to scan millions of keys.
+It's not recommended to use the `KEYS prefix:*` command to get all the keys in a Redis instance,
+especially in production environments, because it can be a slow and resource-intensive operation
+that can impact the performance of the Redis instance.
 
 Instead, you can iterate over Redis keys that match some pattern using the
 [SCAN](https://redis.io/commands/scan) command:

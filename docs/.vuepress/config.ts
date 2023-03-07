@@ -134,6 +134,18 @@ export default defineUserConfig<DefaultThemeOptions>({
       canonical(page) {
         return 'https://redis.uptrace.dev' + page.path
       },
+      customHead(head, page) {
+        const keywords = page.frontmatter.keywords
+        if (keywords) {
+          head.push([
+            'meta',
+            {
+              name: 'keywords',
+              content: keywords.join(','),
+            },
+          ])
+        }
+      },
     }),
     redirectPlugin({
       hostname: 'https://redis.uptrace.dev',
