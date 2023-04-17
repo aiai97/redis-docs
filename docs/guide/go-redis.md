@@ -220,7 +220,7 @@ Conn represents a single Redis connection rather than a pool of connections. Pre
 from Client unless there is a specific need for a continuous single Redis connection.
 
 ```go
-cn := rdb.Conn(ctx)
+cn := rdb.Conn()
 defer cn.Close()
 
 if err := cn.ClientSetName(ctx, "myclient").Err(); err != nil {
